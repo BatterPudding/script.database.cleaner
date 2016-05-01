@@ -169,13 +169,13 @@ if addon:
 					our_password = videodb.find('pass').text
 				except:
 					log('Unable to determine MySQL password')
-			try:
-				our_dbname = videodb.find('name').text
-			except:
-				pass
-			if debugging:
-				log('MySQL details - %s, %s, %s' % (our_host, our_username, our_dbname))
-			is_mysql = True
+				try:
+					our_dbname = videodb.find('name').text
+				except:
+					pass
+				if debugging:
+					log('MySQL details - %s, %s, %s' % (our_host, our_username, our_dbname))
+				is_mysql = True
 		except:
 			is_mysql = False
 
