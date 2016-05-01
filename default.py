@@ -4,6 +4,8 @@
 #  script.video.cleaner
 #  Written by black_eagle and BatterPudding
 #
+# Version 27b/6 - Batter Pudding Fix added
+#
 #
 
 import datetime
